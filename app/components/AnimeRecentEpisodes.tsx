@@ -8,7 +8,7 @@ export default async function AnimeRecentEpisodes() {
 
     return (
         <section className={styles.animeList}>
-            {recentEpisodes.map(recentEpisode => AnimeResultContainer(recentEpisode))}
+            {recentEpisodes.map(anime => AnimeResultContainer(anime))}
         </section>
     )
 }
