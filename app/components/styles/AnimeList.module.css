@@ -1,0 +1,15 @@
+.animeList {
+    padding: 2rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+.animeInfoContainer {
+    background: rgb(0, 0, 0);
+}
+
+.animeInfoContainer h2 {
+  font-size: 1rem;
+}
