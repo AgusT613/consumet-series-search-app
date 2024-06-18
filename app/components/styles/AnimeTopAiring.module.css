@@ -1,0 +1,44 @@
+.topAiringAnimeContainer {
+    border-radius: .5rem;
+    overflow: hidden;
+    height: 25rem;
+    display: flex;
+    width: 100%;
+    border: 2px solid rgb(var(--secondary));
+}
+
+.topAiringAnime {
+    width: 0;
+    flex-grow: 1;
+    opacity: .5;
+    transition: .25s ease;
+    position: relative;
+}
+
+.topAiringAnime:hover {
+    width: 8rem;
+    opacity: 1;
+}
+
+.topAiringAnime:hover > .animeTitle {
+    display: block;
+}
+
+.animeTitle {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    font-size: .8rem;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    padding: .3rem .5rem;
+    text-align: center;
+    text-wrap: balance;
+    transition: .25s ease;
+}
+
+.animeImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

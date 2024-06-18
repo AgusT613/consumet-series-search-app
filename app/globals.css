@@ -1,3 +1,9 @@
+:root {
+  --primary: 156, 75, 210;
+  --secondary: 192, 123, 50;
+  --secondary-less-opacity: 192, 123, 50, 0.826;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

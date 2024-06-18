@@ -7,8 +7,11 @@ export default async function AnimeRecentEpisodes() {
     const recentEpisodes = data.results
 
     return (
-        <section className={styles.animeList}>
-            {recentEpisodes.map(anime => AnimeResultContainer(anime))}
-        </section>
+        <div>
+            <h2>Recent Episodes</h2>
+            <section className={styles.animeList}>
+                {recentEpisodes.map(anime => AnimeResultContainer(anime))}
+            </section>
+        </div>
     )
 }

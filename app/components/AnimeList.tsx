@@ -7,8 +7,11 @@ export default async function AnimeList () {
     const animeList = data.results
 
     return (
-        <section className={styles.animeList}>
-            {animeList.map(anime => AnimeResultContainer(anime))}
-        </section>
+        <div>
+            <h2>Anime List</h2>
+            <section className={styles.animeList}>
+                {animeList.map(anime => AnimeResultContainer(anime))}
+            </section>
+        </div>
     )
 }

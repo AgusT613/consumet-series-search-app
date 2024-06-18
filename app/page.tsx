@@ -5,20 +5,15 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>Home Page - Welcome to AnimeSearchApp</h1>
-      <div>
-        <h2>Recent Episodes</h2>
-        <AnimeRecentEpisodes />
-      </div>
-      <div>
-        <h2>Top Airing</h2>
+    <>
+      <header className={styles.header}>
+        <h1 className={styles.mainHeading}>Home Page - Welcome to AnimeSearchApp</h1>
+      </header>
+      <main className={styles.main}>
         <AnimeTopAiring />
-      </div>
-      <div>
-        <h2>Anime List</h2>
+        <AnimeRecentEpisodes />
         <AnimeList />
-      </div>
-    </main>
+      </main>
+    </>
   );
 }

@@ -1,3 +1,15 @@
+.header {
+  padding: 1.5rem;
+}
+
 .main {
-  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mainHeading {
+  font-size: 1.7rem;
 }
