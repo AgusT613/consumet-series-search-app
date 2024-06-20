@@ -1,6 +1,7 @@
 import styles from "@/app/components/styles/AnimeList.module.css"
 import AnimeResultContainer from "./AnimeResultContainer"
 import { animeProvider } from "../utils/animeProvider"
+import H2Section from "./H2Section"
 
 export default async function AnimeList () {
     const data = await animeProvider.fetchAnimeList()
@@ -8,7 +9,7 @@ export default async function AnimeList () {
 
     return (
         <div>
-            <h2>Anime List</h2>
+            <H2Section>Anime List</H2Section>
             <section className={styles.animeList}>
                 {animeList.map(anime => AnimeResultContainer(anime))}
             </section>

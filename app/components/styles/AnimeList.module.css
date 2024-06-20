@@ -1,8 +1,35 @@
 .animeList {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
 .animeInfoContainer {
-    background: rgb(0, 0, 0);
+  width: 15rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.animeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  background: rgba(0, 0, 0, .85);
+  position: absolute;
+  bottom: 0;
+  padding: .4rem .6rem;
+  width: 100%;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+.animeTitle {
+  color: rgb(var(--text));
+  font-size: .9rem;
 }

@@ -2,6 +2,7 @@
   --primary: 156, 75, 210;
   --secondary: 192, 123, 50;
   --secondary-less-opacity: 192, 123, 50, 0.826;
+  --text: 236, 255, 170;
 }
 
 * {
